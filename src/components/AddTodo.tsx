@@ -1,27 +1,31 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 
-// TODO: 要講的重點
-// 1. interface 的寫法，寫在 props 後面或分開
-// 2. event 的 input
-// 3. e.preventDefault 和 target.value 為什麼可以自動補齊
+// 1. 設定 input state 來儲存待辦事項
+// 2. 處理 handleInput 函式來更新 input state
+// 3. 處理傳入的 addTodo 函式
+// TODO 練習一下，處理 handleSubmit 函式來新增待辦事項
+
+// TODO: 重點複習
+// 1. props 的寫法，可以寫在 interface 或參數內？
+// 2. 泛型和型別註解的差異是什麼，可以按 CMD 或 CTRL 檢視原始碼
+// 3. event 的 input 要怎麼找到相對應的 interface？
 
 interface AddTodoProps {
   onAdd: (todo: string) => void
 }
 
 export const AddTodo = ({ onAdd }: AddTodoProps) => {
-  // 僅說明 string 的 input 定義
+  // 定義 useState 的泛型為 string
   const [input, setInput] = useState<string>('')
 
-  // 展示 event 是如何得知
+  // 可以在 onChange 裡寫個小的 function，就可以從 param 找到 interface
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value)
   }
 
-  // 需要講 e 的 preventDefault
   // 新增 todo 後，清空 input 的值
-  // AddTodo 完後，問大家的狀況
+  // 顯示相對應的提示方框
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
