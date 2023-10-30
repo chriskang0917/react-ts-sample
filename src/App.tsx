@@ -2,7 +2,7 @@ import { Toaster } from 'react-hot-toast'
 import { AddTodo, TodoList } from './components'
 
 // TODO 注意事項
-// 跟大家說盡量跟著聽，以理解為主
+// 講解時盡量跟著聽，以理解為主
 // 會提供完整的註解和程式碼給大家參考
 // 每一個任務，都會有 TODO 1. 2. 3. ... 這樣的註解，代表這個任務的步驟
 
