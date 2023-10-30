@@ -1,7 +1,7 @@
 // 1. 設定 input state 來儲存待辦事項
 // 2. 處理 handleInput 函式來更新 input state
-// 3. 處理傳入的 addTodo 函式
-// TODO 練習一下，處理 handleSubmit 函式來新增待辦事項
+// 8. 處理傳入的 addTodo 函式
+// TODO 9. 練習一下，處理 handleSubmit 函式來新增待辦事項
 
 export const AddTodo = () => {
   const handleInput = () => {}

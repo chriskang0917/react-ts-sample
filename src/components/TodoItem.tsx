@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-// TODO 練習一下：把 todo 傳入 TodoItem 裡
+// TODO 13. 練習一下：把 todo 傳入 TodoItem 裡
 
 export const TodoItem = () => {
   return (

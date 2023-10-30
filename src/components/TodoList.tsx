@@ -1,7 +1,7 @@
 import { SiStarship } from 'react-icons/si'
 
-// TODO 練習一下：怎麼把 todos 從 props 傳進來？
-// 2. 將 todos 用 loop 傳到 TodoItem.tsx
+// TODO 11. 練習一下：怎麼把 todos 從 props 傳進來？
+// 12. 將 todos 用 loop 傳到 TodoItem.tsx
 
 export const TodoList = () => {
   // 如果沒有任何待辦事項，顯示提示訊息。
